@@ -15,15 +15,19 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
         tocaSom(idAudio);
     }
 
-    tecla.onkeydown = function (evento) {
-        if ('espaço')
+    tecla.onkeydown = function(evento){
+   
 
+    if (evento.code === 'Space'||evento.code === 'Space') {
         tecla.classList.add('ativa');
     }
 
 
+    }
 
-    tea.onkeyup = function () {
+    tecla.onkeyup = function() {
         tecla.classList.remove('ativa');
     }
+
+
 }
